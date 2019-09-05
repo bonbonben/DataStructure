@@ -1,0 +1,52 @@
+Warnsdorff’s rule:
+the knight must always move to one of the squares from which there are the fewest exits to squares not already traversed
+a knight may move to one of the squares (i-2, j+1), (i-1, j+2), (i+1, j+2), (i+2, j+1), (i+2, j-1), (i+1, j-2), (i-1, j-2), (i-2, j-1)
+if (i, j) is located near one of the board’s edges, some of these possibilities could move the knight off the board, and this is not permitted
+
+ktmove1 ktmove2
+-2      1
+-1      2
+1       2
+2       1
+2       -1
+1       -2
+-1      -2
+-2      -1
+
+a knight at (i, j) may move to (i+ ktmove1[k], j+ ktmove2[k]), where k is some value between 0 and 7
+
+(a) Initialize chessboard: For 0 ≤ i, j ≤ 7 set board[i][j] to -1
+(b) Set starting position: Read and print (i, j) and then set board[i][j] to 0
+(c) Loop: For 1 ≤ m ≤ 63, do steps (d) through (g)
+(d) Form a set of possible next squares
+(e) Test special cases
+(f) Find next square with minimum number of exits
+(g) Move knight
+(h) Print: Print out the board showing the solution to the knight’s tour, and then terminate the algorithm
+
+The Input
+The input will consist of a series of pairs of integers i and j, one pair of integers per line.
+It means that the starting position of knight is in row i and column j in the two dimension array (board[i][j]).
+For any integer i and j, 0 ≤ i, j ≤ 7. If the input integer less than 0, then terminate the program.
+
+The Output
+For each pair of input integers i and j you should output the starting position i, j on one line, and the process of knight’s tour.
+The process should be presented as "R: m, n" which means the knight move to row m and column n at R th movement.
+Each pair of output should be separated by a new line.
+
+Sample Input
+4 2
+5 0
+-1
+
+Sample Output
+Starting Position (4, 2)
+0: 4, 2
+1: Xi 1, Xj 1
+2: Xi 2, Xj 2
+…
+Starting Position (5, 0)
+0: 5, 0
+1: Xi 1, Xj 1
+2: Xi 2, Xj 2
+…
