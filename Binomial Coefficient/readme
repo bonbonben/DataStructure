@@ -1,0 +1,19 @@
+Input format:
+    n
+    m
+
+Output format:
+    Answer(iterative version): answer
+    Answer(recursive version): answer
+
+Example:
+  Input:
+    4
+    1
+    5
+    3
+  Output:
+    Answer(iterative version): 4
+    Answer(recursive version): 4
+    Answer(iterative version): 10
+    Answer(recursive version): 10
