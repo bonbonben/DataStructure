@@ -1,0 +1,12 @@
+The source node is fixed to node 0.
+The program should be able to input different destination nodes.
+For each destination nodes output the source destination shortest path length and the node number of this path.
+Design a continuous function to input, terminate your program until you input -1.
+
+Example Input:
+Input node number as destination
+Input node 3
+
+Example Output:
+The shortest path length from node 0 to node 3 is 19
+The path is 0->2->3
