@@ -1,0 +1,18 @@
+implement a complete linked list system to perform arithmetic on sparse matrices using our linked list representation
+(a) mread: Read in a sparse matrix
+(b) mwrite: Write out the contents of a sparse matrix
+(c) madd: Create the sparse matrix d=a+b
+(d) mmult: Create the sparse matrix d=a*b
+(e) mtranspose: Create the sparse matrix b=aT
+
+The content of the input sparse matrix will be written in the input file, read the input file to get the content.
+If user choose “Add Matrices” or “Multi Matrices”, then read two input files.
+The input file for “Add Matrices” should be named as “add1_matrix.txt” and “add2_matrix.txt”.
+The input file for “Multi Matrices” will be “multi1_matrix.txt” and “multi2_matrix.txt”. 
+For “Transpose Matrix”, read an input file “transpos_matrix.txt”.
+
+A .txt file contains the content of a sparse matrix.
+In the .txt file, the first line contains three values (m,n,t) which represents row, column, and the number of the nonzero values,
+follow by all the nonzero values in the sparse matrix with their respective row, column and values.
+
+Show the output directly on the screen. The output file should be the same format as the input file.
