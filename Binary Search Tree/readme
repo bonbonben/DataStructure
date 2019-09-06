@@ -1,0 +1,10 @@
+Change the definition of a binary search tree so that equal keys are permitted and that we add a count field to the node structure.
+(a) Rewrite insertNode so that it increments the count field then a plural key is found. Otherwise, a new node is created.
+(b) Rewrite delete so that it decrements the count field when the key is found. The node is eliminated only if its count is 0.
+
+At the end of each operation, you should present your tree in Preorder and show the Count number of each node in the tree.
+Each node should contain the following items: Leftchild, Rightchild, Data, and Count.
+If the node’s Count is zero after you delete it, always replace it with its leftchild first.
+
+The input file includes insert(1), delete(2) command, each followed by the number of the node to insert or delete, use (3) to quit the program.
+After you insert/delete a node, you should present your tree in preorder and show the number of Count in each node.
